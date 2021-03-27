@@ -1,0 +1,113 @@
+<head>
+    <meta name="description" content="Jari Kuipers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    p {
+        margin: 4px;
+    }
+
+    html,
+    body {
+        height: calc(100%);
+    }
+
+    .cool-list {
+        margin-left: 2em;
+    }
+
+    .cool-list>p {
+        font-weight: 600;
+    }
+
+    @media (prefers-color-scheme: light) {
+        body {
+            background-color: #e3f2fd;
+            color: black;
+        }
+
+        .block {
+            border-color: white;
+            border-width: 10px;
+            background-color: #4fc3f7;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #212121;
+            font-weight: 350;
+            color: #ececec;
+        }
+
+        .block {
+            background-color: #3d3d3d;
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        .block {
+            margin: 1em;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .flexer {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .block {
+            border-radius: 20px;
+        }
+
+        .flexer {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+</style>
+
+<html>
+
+<body
+    style="font-family: Open Sans, Arial; text-align: justify; margin: auto auto; max-width: 600px; display: flex; flex-direction: column; justify-content: center;">
+    <div class="block" style="padding: 1em;">
+        <div style="display: flex; align-items: center; text-align: start;">
+            <img src="me.jpg" style="max-width: 100px; flex: 1;" />
+            <div style="margin-left: 1em; ">
+                <p style="line-height: 1; font-weight: 600;">Hallo! Ik ben Jari.</p>
+                <p>Ik ben software ontwikkelaar.</p>
+                <p>Ik hoop dat dit genoeg styling is.</p>
+            </div>
+        </div>
+        <div class="flexer" style="margin-top: 2em;">
+            <div class="cool-list">
+                <p>Mijn vaardigheden</p>
+                <ul style="margin: 8px 0;">
+                    <li>ASP.NET</li>
+                    <li>Razor</li>
+                    <li>C++ (Embedded en desktop)</li>
+                    <li>Xamarin Forms</li>
+                </ul>
+            </div>
+
+            <div class="cool-list">
+                <p>Mijn interesses</p>
+                <ul style="margin: 8px 0;">
+                    <li>Krachttraining</li>
+                    <li>Speciaalbier</li>
+                    <li>Programmeren</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
