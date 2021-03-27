@@ -1,0 +1,22 @@
+{
+  "name": "empty-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -r public; mkdir public && node ./node_modules/minify/bin/minify index.html > public/index.html && cp me.jpg public/me.jpg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LittleBoxOfChicken/minimalist-page.git"
+  },
+  "author": "Jari Kuipers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LittleBoxOfChicken/minimalist-page/issues"
+  },
+  "homepage": "https://github.com/LittleBoxOfChicken/minimalist-page#readme",
+  "devDependencies": {
+    "minify": "^7.0.1"
+  }
+}
