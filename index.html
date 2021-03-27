@@ -21,6 +21,15 @@
         font-weight: 600;
     }
 
+    .block {
+        border-radius: 20px;
+    }
+
+    .flexer {
+        display: flex;
+        flex-direction: row;
+    }
+
     @media (prefers-color-scheme: light) {
         body {
             background-color: #e3f2fd;
@@ -61,17 +70,6 @@
             justify-content: center;
         }
     }
-
-    @media (min-width: 800px) {
-        .block {
-            border-radius: 20px;
-        }
-
-        .flexer {
-            display: flex;
-            flex-direction: row;
-        }
-    }
 </style>
 
 <html>
@@ -80,7 +78,7 @@
     style="font-family: Open Sans, Arial; text-align: justify; margin: auto auto; max-width: 600px; display: flex; flex-direction: column; justify-content: center;">
     <div class="block" style="padding: 1em;">
         <div style="display: flex; align-items: center; text-align: start;">
-            <img src="me.jpg" style="max-width: 150px; flex: 1;" />
+            <img src="me.jpg" style="border-radius: 20px; max-width: 150px; flex: 1;" />
             <div style="margin-left: 1em; ">
                 <p style="line-height: 1; font-weight: 600;">Hallo! Ik ben Jari.</p>
                 <p>Ik ben software ontwikkelaar.</p>
