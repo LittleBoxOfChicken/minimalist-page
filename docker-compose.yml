@@ -1,0 +1,9 @@
+services:
+  website:
+    image: caddy
+    volumes:
+      - /home/website/minimalist-page/Caddyfile:/etc/caddy/Caddyfile
+      - /home/website/minimalist-page/public:/srv
+    ports:
+      - "80:80"
+      - "443:443"
