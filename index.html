@@ -6,6 +6,7 @@
 <style>
     p {
         margin: 4px;
+        opacity: 0.8;
     }
 
     html,
@@ -32,7 +33,9 @@
     }
 
     .header-flexer {
-        display: flex; align-items: center; text-align: start;
+        display: flex;
+        align-items: center;
+        text-align: start;
     }
 
     @media (prefers-color-scheme: light) {
@@ -45,18 +48,19 @@
             border-color: white;
             border-width: 10px;
             background-color: #4fc3f7;
+            box-shadow: 0px 0px 10px #4fc3f7;
         }
     }
 
     @media (prefers-color-scheme: dark) {
         body {
             background-color: #212121;
-            font-weight: 350;
             color: #ececec;
         }
 
         .block {
             background-color: #3d3d3d;
+            box-shadow: 0 0 10px black;
         }
     }
 
@@ -66,10 +70,10 @@
             border-radius: 5px;
         }
 
-.header-flexer {
-    flex-direction: column;
-    justify-content: center;
-}
+        .header-flexer {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     @media (max-width: 440px) {
@@ -85,7 +89,7 @@
 <html>
 
 <body
-    style="font-family: Open Sans, Arial; text-align: justify; margin: auto auto; max-width: 600px; display: flex; flex-direction: column; justify-content: center;">
+    style="font-family: Open Sans, Arial; margin: auto auto; max-width: 600px; display: flex; flex-direction: column; justify-content: center;">
     <div class="block" style="padding: 1em;">
         <div class="header-flexer" style="">
             <img src="me.jpg" style="border-radius: 20px; max-width: 150px; flex: 1;" />
