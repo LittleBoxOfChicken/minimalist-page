@@ -1,3 +1,11 @@
-jankuikens.nl
+www.jankuikens.nl {
+  redir https://jankuikens.nl{uri}
+}
 
-file_server
+jankuikens.nl {
+  file_server
+}
+
+strapi.jankuikens.nl {
+  reverse_proxy strapi:80
+}

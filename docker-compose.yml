@@ -7,3 +7,10 @@ services:
     ports:
       - "80:80"
       - "443:443"
+
+  strapi:
+    image: strapi/strapi
+    volumes:
+      - ./app:/srv/app
+    depends_on:
+      - website
