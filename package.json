@@ -1,7 +1,7 @@
 {
   "engines" : { 
     "node" : ">=14.0.0" 
-  }
+  },
   "name": "empty-page",
   "version": "1.0.0",
   "description": "",
