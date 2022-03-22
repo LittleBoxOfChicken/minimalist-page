@@ -1,13 +1,15 @@
 {
-  "engines" : { 
-    "node" : ">=14.0.0" 
+  "homepage": "https://github.com/LittleBoxOfChicken/minimalist-page#readme",
+  "engines": {
+    "node": ">=14.0.0"
   },
   "name": "empty-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -r public; mkdir public && node ./node_modules/minify/bin/minify index.html > public/index.html && cp me.webp public/me.webp"
+    "predeploy": "rm -r public; mkdir public && node ./node_modules/minify/bin/minify index.html > public/index.html && cp me.webp public/me.webp && cp favicon.ico public/favicon.ico",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,8 @@
   "bugs": {
     "url": "https://github.com/LittleBoxOfChicken/minimalist-page/issues"
   },
-  "homepage": "https://github.com/LittleBoxOfChicken/minimalist-page#readme",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "minify": "^7.0.1"
   }
 }
