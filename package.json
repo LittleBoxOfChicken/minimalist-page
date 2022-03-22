@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -r public; mkdir public && node ./node_modules/minify/bin/minify index.html > public/index.html && cp me.jpg public/me.jpg && cp me.webp public/me.webp && cp Caddyfile public/Caddyfile && cp docker-compose.yml public/docker-compose.yml"
+    "build": "rm -r public; mkdir public && node ./node_modules/minify/bin/minify index.html > public/index.html && cp me.webp public/me.webp && cp Caddyfile public/Caddyfile && cp docker-compose.yml public/docker-compose.yml"
   },
   "repository": {
     "type": "git",
