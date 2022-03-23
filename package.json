@@ -8,7 +8,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "rm -r public; mkdir public && node ./node_modules/minify/bin/minify index.html > public/index.html && cp me.webp public/me.webp && cp favicon.ico public/favicon.ico",
+    "predeploy": "rm -r public || true; mkdir public && node ./node_modules/minify/bin/minify index.html > public/index.html && cp me.webp public/me.webp && cp favicon.ico public/favicon.ico",
     "deploy": "gh-pages -d public"
   },
   "repository": {
